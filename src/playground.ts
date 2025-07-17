@@ -1,9 +1,15 @@
+
+
 import { db } from "./server/db";
 
-await db.user.create({
-  data: {
-    email: 'test@gmail.com',
-    name: 'test',
-  }
-});
-console.log('done');
+
+  await db.User.create({
+    data: {
+      emailAddress: 'abc@gmail.com',
+      firstName: 'test',
+      lastName: 'test'
+    }
+  });
+  console.log('done');
+
+
